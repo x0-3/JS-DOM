@@ -1,4 +1,4 @@
-# exo-js
+# JS-DOM
 
  
 - ### Ex1: A web app that shows a 200x200 px square that when clicked shows the CSS settings applied
