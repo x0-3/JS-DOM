@@ -1,7 +1,7 @@
 let boxEl = document.getElementById("box-el");
 
 document.addEventListener("keydown", function(event) {
-  if (event.keyCode === 40) {
+  if (event.key === "ArrowDown") {
     console.log("Down arrow key pressed");
     // Create a new box with a random color
     let newBox = document.createElement("div");
@@ -9,7 +9,7 @@ document.addEventListener("keydown", function(event) {
     newBox.style.height = "60px";
     newBox.style.backgroundColor = getRandomColor();
     boxEl.appendChild(newBox);
-  } else if (event.keyCode === 38) {
+  } else if (event.key === "ArrowUp") {
     console.log("Up arrow key pressed");
     // Remove the last box added
     let boxes = boxEl.getElementsByTagName("div");

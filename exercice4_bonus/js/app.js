@@ -4,7 +4,7 @@ let boxEl = document.getElementById("box-el");
 document.addEventListener("keydown", function(event) {
   let boxes = boxEl.getElementsByTagName("div");
 
-  if (event.keyCode === 40) {
+  if (event.key === "ArrowDown") {
     // Create a new box with a random color
     let newBox = document.createElement("div");
     newBox.style.width = "60px";
@@ -20,7 +20,7 @@ document.addEventListener("keydown", function(event) {
       })
     }
 
-  } else if (event.keyCode === 38) {
+  } else if (event.key === "ArrowUp") {
     // Remove the last box added
     if (boxes.length > 0) {
       boxEl.removeChild(boxes[boxes.length - 1]);
